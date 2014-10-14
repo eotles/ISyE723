@@ -1,5 +1,7 @@
 '''
-Created on Oct 13, 2014
+Markov Decision Processes
+Homework #3
+Created Oct. 2014
 
 @author: eotles
 '''
@@ -241,7 +243,7 @@ def p4():
                 p.update({s_a: {'0': 1}})
             else:
                 poss = dict()
-                s_prime = int(s[0])-1
+                s_prime = int(s)-1
                 #choose death
                 if(a == '0'):
                     poss = {'0': 1}
@@ -256,6 +258,9 @@ def p4():
                     poss = makePoss(s_prime, 5, .5, .02)
                 p.update({s_a: poss})
         r_N.update({s: val})
+    
+    #for k,v in p.iteritems():
+    #    print("%s %s" %(k,v))
         
     print('Problem 4.28\n  See appended code for alg. implementation.  ')
     backprop(N, S, A, r_N, r_t, p) 
