@@ -211,6 +211,7 @@ class model(object):
     def _printPolicy(self, d, v, n):
         for state in self.S:
             print("State: %s, Decision: %s, Value: %f" %(state, d.get(n).get(state), v.get(n).get(state)))
+        print('')
         
         
 

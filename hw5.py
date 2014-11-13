@@ -24,7 +24,7 @@ def main():
     
     model = mdp.model(N, S, A, r_t, r_N, p, l)
     model.valueIteration(0.01)
-    model.valueIteration(0.11)
+    model.valueIteration(0.1)
     model.policyIteration()
     model.modifiedPolicyIteration(.01, 100)
     model.modifiedPolicyIteration(.1, 100)

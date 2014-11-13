@@ -2,9 +2,9 @@ Value Iteration (E: 0.01)
 State: L, Decision: Send, Value: 257.689084
 State: H, Decision: Send, Value: 290.656117
 
-Value Iteration (E: 0.11)
-State: L, Decision: Send, Value: 257.655933
-State: H, Decision: Send, Value: 290.622966
+Value Iteration (E: 0.1)
+State: L, Decision: Send, Value: 257.659570
+State: H, Decision: Send, Value: 290.626603
 
 Policy Iteration
 State: L, Decision: Send, Value: 257.692308
