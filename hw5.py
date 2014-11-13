@@ -1,5 +1,5 @@
 '''
-Created on Nov 11, 2014
+Created in Fall 2014
 
 @author: eotles
 '''
@@ -24,6 +24,10 @@ def main():
     
     model = mdp.model(N, S, A, r_t, r_N, p, l)
     model.valueIteration(0.01)
+    model.valueIteration(0.11)
+    model.policyIteration()
+    model.modifiedPolicyIteration(.01, 10)
+    model.modifiedPolicyIteration(.1, 10)
 
 
 if __name__ == '__main__':
