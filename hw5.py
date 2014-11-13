@@ -26,8 +26,8 @@ def main():
     model.valueIteration(0.01)
     model.valueIteration(0.11)
     model.policyIteration()
-    model.modifiedPolicyIteration(.01, 10)
-    model.modifiedPolicyIteration(.1, 10)
+    model.modifiedPolicyIteration(.01, 100)
+    model.modifiedPolicyIteration(.1, 100)
 
 
 if __name__ == '__main__':
