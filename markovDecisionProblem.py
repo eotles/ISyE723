@@ -21,6 +21,13 @@ except ImportError:
 
 stateAndAction = collections.namedtuple("stateAndAction", ['state', 'action'])
 
+#badly formed data exception
+class badlyFormedDataException(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return repr(self.value)
+
 #improper time horizon exception
 class improperTimeHorizonException(Exception):
     def __init__(self, value):
@@ -184,84 +191,110 @@ class model(object):
         self._printPolicy(d, v, n)
                 
         
-    #TODO: Clean this up
-    #TODO: Maybe split primal and dual into subf(x)s
-    #TODO: allow for differing alpha
-    #TODO: pretty print out the answers
-    #TODO: try catches around lps - just in case
-    def linearProgramming(self):
+    def linearProgramming_Primal(self, alpha=None):
         if (not self.infHoriz): raise(improperTimeHorizonException("Try A Finite Time Horizon Method"))
         if (not HAVEGUROBI): raise(ImportError("Unable to import gurobipy"))
+        alpha = self._checkAlpha(alpha)
         
-        alpha = dict()
-        for state in self.S:
-            alpha.update({state: 1})
-        
-        print("PRIMAL!")
-        #create a new model for primal lp MDP
-        plpMDP = guro.Model("MDP (Primal)")
-        #create variables
-        v = dict()
-        for state in self.S:
-            v.update({state: plpMDP.addVar()})
-        #update
-        plpMDP.update()
-        #set objective
-        plpMDP.setObjective(guro.quicksum(plpMDP.getVars()), guro.GRB.MINIMIZE)
-        #add constraints
-        for state in self.S:
-            for action in self.A.get(state):
-                saPair = stateAndAction(state, action)
-                tempLinExp = guro.LinExpr(v.get(state))
-                for nextState, transProb in self.p.get(saPair).iteritems():
-                    tempLinExp.addTerms(-self.l * transProb, v.get(nextState))
-                plpMDP.addConstr(tempLinExp, guro.GRB.GREATER_EQUAL, self.r_t.get(saPair))      
-        plpMDP.optimize()
-        for var in plpMDP.getVars():
-            print('%s %g' % (var.varName, var.x))
+        try:
+            #create a new model for primal lp MDP
+            plpMDP = guro.Model("MDP (Primal)")
+            plpMDP.setParam( 'OutputFlag', False)
+            #create variables
+            v = dict()
+            for state in self.S:
+                v.update({state: plpMDP.addVar()})
+            #update
+            plpMDP.update()
+            #set objective
+            plpMDP.setObjective(guro.quicksum(plpMDP.getVars()), guro.GRB.MINIMIZE)
+            #add constraints
+            plpCons = dict()
+            for state in self.S:
+                for action in self.A.get(state):
+                    saPair = stateAndAction(state, action)
+                    tempLinExp = guro.LinExpr(v.get(state))
+                    for nextState, transProb in self.p.get(saPair).iteritems():
+                        tempLinExp.addTerms(-self.l * transProb, v.get(nextState))
+                    plpCons.update({saPair: plpMDP.addConstr(tempLinExp, guro.GRB.GREATER_EQUAL, self.r_t.get(saPair))})      
+            #solve
+            plpMDP.optimize()
     
-        print('Obj: %g' % plpMDP.objVal)
-        #note the constraints that are tight for each state are the actions we need to worry about
+            #get policy (d)
+            d = dict()
+            for state in self.S:
+                for action in self.A.get(state):
+                    saPair = stateAndAction(state, action)
+                    if(plpCons.get(saPair).slack >= 0):
+                        break
+                d.update({state: action})
+            
+            print("Linear Programming (Primal Form)")
+            for state in self.S:
+                print("State: %s, Decision: %s, Value: %f" %(state, d.get(state), v.get(state).x))
+            print('')
+            
+        except guro.GurobiError:
+            print('Gurobi Reported an error')
+
+
+    def linearProgramming_Dual(self, alpha=None):
+        if (not self.infHoriz): raise(improperTimeHorizonException("Try A Finite Time Horizon Method"))
+        if (not HAVEGUROBI): raise(ImportError("Unable to import gurobipy"))
+        alpha = self._checkAlpha(alpha)
         
-        
-        print("DUAL!")
-        #create a new model for dual lp MDP
-        dlpMDP = guro.Model("MDP (Dual)")
-        #create variables
-        x = dict()
-        for state in self.S:
-            for action in self.A.get(state):
-                saPair = stateAndAction(state, action)
-                x.update({saPair: dlpMDP.addVar()})
-        #update
-        dlpMDP.update()
-        #set objective
-        tempLinExp = guro.LinExpr()
-        for state in self.S:
-            for action in self.A.get(state):
-                saPair = stateAndAction(state,action)
-                tempLinExp.addTerms(self.r_t.get(saPair), x.get(saPair))
-        dlpMDP.setObjective(tempLinExp, guro.GRB.MAXIMIZE)
-        #add constraints
-        for jstate in self.S:
+        try:
+            #create a new model for dual lp MDP
+            dlpMDP = guro.Model("MDP (Dual)")
+            dlpMDP.setParam( 'OutputFlag', False)
+            #create variables
+            x = dict()
+            for state in self.S:
+                for action in self.A.get(state):
+                    saPair = stateAndAction(state, action)
+                    x.update({saPair: dlpMDP.addVar()})
+            dlpMDP.update()
+            #set objective
             tempLinExp = guro.LinExpr()
-            for action in self.A.get(jstate):
-                jaPair = stateAndAction(jstate, action)
-                tempLinExp.addTerms(1, x.get(jaPair))
             for state in self.S:
                 for action in self.A.get(state):
                     saPair = stateAndAction(state,action)
-                    tempLinExp.addTerms(-self.l*self.p.get(saPair).get(jstate), x.get(saPair))
-            dlpMDP.addConstr(tempLinExp, guro.GRB.EQUAL, alpha.get(jstate))
+                    tempLinExp.addTerms(self.r_t.get(saPair), x.get(saPair))
+            dlpMDP.setObjective(tempLinExp, guro.GRB.MAXIMIZE)
+            #add constraints
+            dlpCons = dict()
+            for jstate in self.S:
+                tempLinExp = guro.LinExpr()
+                for action in self.A.get(jstate):
+                    jaPair = stateAndAction(jstate, action)
+                    tempLinExp.addTerms(1, x.get(jaPair))
+                for state in self.S:
+                    for action in self.A.get(state):
+                        saPair = stateAndAction(state,action)
+                        tempLinExp.addTerms(-self.l*self.p.get(saPair).get(jstate), x.get(saPair))
+                dlpCons.update({jstate: dlpMDP.addConstr(tempLinExp, guro.GRB.EQUAL, alpha.get(jstate))})
+            #solve
+            dlpMDP.optimize()
+            
+            #get policy (d) and values (v)
+            d = dict()
+            v = dict()
+            for state in self.S:
+                for action in self.A.get(state):
+                    saPair = stateAndAction(state, action)
+                    if(x.get(saPair).x >= 0): break
+                d.update({state: action})
+                v.update({state: dlpCons.get(state).Pi})
+            
+            print("Linear Programming (Dual Form)")
+            for state in self.S:
+                print("State: %s, Decision: %s, Value: %f" %(state, d.get(state), v.get(state)))
+            print('')
         
-        dlpMDP.optimize()
-        for var in dlpMDP.getVars():
-            print('%s %g' % (var.varName, var.x))
-    
-        print('Obj: %g' % plpMDP.objVal)
-        #action variable that is > for each state is the one we want!
-
-   
+        except guro.GurobiError:
+            print('Gurobi Reported an error')
+                
+                  
     def _policyImprovement(self, v, n):
         tempV = dict()
         tempD = dict()
@@ -280,6 +313,17 @@ class model(object):
             tempV.update({state: maxReward})
             tempD.update({state: argMaxReward})
         return((tempV,tempD))
+    
+    def _checkAlpha(self, alpha):
+        if(alpha==None):
+            alpha = dict()
+            for state in self.S:
+                alpha.update({state: 1})
+        else:
+            for state in self.S:
+                try: float(alpha.get(state))
+                except: raise(badlyFormedDataException("Alpha poorly formed.  Need a value for every state."))
+        return(alpha)
     
     def _initV0(self):
         tempV = dict()
