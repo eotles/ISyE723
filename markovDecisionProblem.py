@@ -189,7 +189,15 @@ class model(object):
         print("Modified Policy Iteration (E: %s, m: %s)" %(epsilon, m))
         self._printPolicy(d, v, n)
                 
-    #LP Primal Model Provided by Martin Putterman's Markov Decision Processes    
+    #LP Primal Model Provided by Putterman's Markov Decision Processes (p223)
+    #    min a*v
+    #    s.t.    v(s) - sum_jInS(l*p(j|s,a)*v(j)) >= r(s,a) for_aInA_sInS
+    #            v(s) unconstrained
+    #Parameters:
+    #    outputFlag (boolean): print gurobi solver output
+    #    alpha (dict(state:float)) :alpha vector
+    #Return:
+    #    None
     def linearProgramming_Primal(self, outputFlag=False, alpha=None):
         if (not self.infHoriz): raise(improperTimeHorizonException("Try A Finite Time Horizon Method"))
         if (not HAVEGUROBI): raise(ImportError("Unable to import gurobipy"))
@@ -237,7 +245,15 @@ class model(object):
         except guro.GurobiError:
             print('Gurobi Reported an error')
 
-    #LP Dual Model Provided by Martin Putterman's Markov Decision Processes
+    #LP Dual Model Provided by Putterman's Markov Decision Processes (p224)
+    #    max r*x
+    #    s.t.    sum_aInA(x(j,a)) - sum_sInS_aInA(l*p(j|s,a)*x(s,a)) = a(j) for_jInS
+    #            x(s,a) >= 0
+    #Parameters:
+    #    outputFlag (boolean): print gurobi solver output
+    #    alpha (dict(state:float)) :alpha vector
+    #Return:
+    #    None
     def linearProgramming_Dual(self, outputFlag, alpha=None):
         if (not self.infHoriz): raise(improperTimeHorizonException("Try A Finite Time Horizon Method"))
         if (not HAVEGUROBI): raise(ImportError("Unable to import gurobipy"))
