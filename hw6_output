@@ -18,10 +18,32 @@ Modified Policy Iteration (E: 0.1, m: 100)
 State: L, Decision: Send, Value: 257.692246
 State: H, Decision: Send, Value: 290.659279
 
+Solving MDP (Primal Form)...
+Optimize a model with 4 rows, 2 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 4 rows, 2 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.100000e+02   0.000000e+00      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  5.483516484e+02
 Linear Programming (Primal Form)
 State: L, Decision: Send, Value: 257.692308
 State: H, Decision: Send, Value: 290.659341
 
+Solving MDP (Dual Form)...
+Optimize a model with 2 rows, 4 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.1000000e+32   5.000000e+29   1.100000e+02      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  5.483516484e+02
 Linear Programming (Dual Form)
 State: L, Decision: Send, Value: 257.692308
 State: H, Decision: Send, Value: 290.659341

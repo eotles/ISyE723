@@ -2,22 +2,21 @@
 Created in Fall 2014
 
 @author: eotles
+
+Based on MDP algorithms presented in Martin L. Putterman's 
+Markov Decision Processes.
 '''
+
 import collections
 import math
 import numpy as np
 import sys
-
+#check if computer has gurobi installed
 try:
     import gurobipy as guro
     HAVEGUROBI = True
 except ImportError:
     HAVEGUROBI = False
-    
-try:
-    from afsjklskljjhfjkldfhl import *
-except ImportError:
-    noGurobi = True
 
 stateAndAction = collections.namedtuple("stateAndAction", ['state', 'action'])
 
@@ -190,8 +189,8 @@ class model(object):
         print("Modified Policy Iteration (E: %s, m: %s)" %(epsilon, m))
         self._printPolicy(d, v, n)
                 
-        
-    def linearProgramming_Primal(self, alpha=None):
+    #LP Primal Model Provided by Martin Putterman's Markov Decision Processes    
+    def linearProgramming_Primal(self, outputFlag=False, alpha=None):
         if (not self.infHoriz): raise(improperTimeHorizonException("Try A Finite Time Horizon Method"))
         if (not HAVEGUROBI): raise(ImportError("Unable to import gurobipy"))
         alpha = self._checkAlpha(alpha)
@@ -199,7 +198,7 @@ class model(object):
         try:
             #create a new model for primal lp MDP
             plpMDP = guro.Model("MDP (Primal)")
-            plpMDP.setParam( 'OutputFlag', False)
+            if(not outputFlag): plpMDP.setParam( 'OutputFlag', outputFlag)
             #create variables
             v = dict()
             for state in self.S:
@@ -218,6 +217,7 @@ class model(object):
                         tempLinExp.addTerms(-self.l * transProb, v.get(nextState))
                     plpCons.update({saPair: plpMDP.addConstr(tempLinExp, guro.GRB.GREATER_EQUAL, self.r_t.get(saPair))})      
             #solve
+            if(outputFlag): print("Solving MDP (Primal Form)...")
             plpMDP.optimize()
     
             #get policy (d)
@@ -237,8 +237,8 @@ class model(object):
         except guro.GurobiError:
             print('Gurobi Reported an error')
 
-
-    def linearProgramming_Dual(self, alpha=None):
+    #LP Dual Model Provided by Martin Putterman's Markov Decision Processes
+    def linearProgramming_Dual(self, outputFlag, alpha=None):
         if (not self.infHoriz): raise(improperTimeHorizonException("Try A Finite Time Horizon Method"))
         if (not HAVEGUROBI): raise(ImportError("Unable to import gurobipy"))
         alpha = self._checkAlpha(alpha)
@@ -246,7 +246,7 @@ class model(object):
         try:
             #create a new model for dual lp MDP
             dlpMDP = guro.Model("MDP (Dual)")
-            dlpMDP.setParam( 'OutputFlag', False)
+            if(not outputFlag): dlpMDP.setParam( 'OutputFlag', outputFlag)
             #create variables
             x = dict()
             for state in self.S:
@@ -274,6 +274,7 @@ class model(object):
                         tempLinExp.addTerms(-self.l*self.p.get(saPair).get(jstate), x.get(saPair))
                 dlpCons.update({jstate: dlpMDP.addConstr(tempLinExp, guro.GRB.EQUAL, alpha.get(jstate))})
             #solve
+            if(outputFlag): print("Solving MDP (Dual Form)...")
             dlpMDP.optimize()
             
             #get policy (d) and values (v)
