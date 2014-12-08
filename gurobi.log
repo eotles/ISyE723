@@ -792,3 +792,776 @@ Iteration    Objective       Primal Inf.    Dual Inf.      Time
 
 Solved in 2 iterations and 0.00 seconds
 Optimal objective  5.483516484e+02
+
+Gurobi 5.6.3 (mac64) logging started Tue Nov 18 13:04:38 2014
+
+Optimize a model with 4 rows, 2 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 4 rows, 2 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.100000e+02   0.000000e+00      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.01 seconds
+Optimal objective  5.483516484e+02
+Optimize a model with 2 rows, 4 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.1000000e+32   5.000000e+29   1.100000e+02      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  5.483516484e+02
+
+Gurobi 5.6.3 (mac64) logging started Tue Nov 18 22:30:35 2014
+
+Optimize a model with 4 rows, 2 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 4 rows, 2 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.100000e+02   0.000000e+00      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.01 seconds
+Optimal objective  5.483516484e+02
+Optimize a model with 2 rows, 4 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.1000000e+32   5.000000e+29   1.100000e+02      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  5.483516484e+02
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 19:47:00 2014
+
+Optimize a model with 4 rows, 2 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 4 rows, 2 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.100000e+02   0.000000e+00      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.01 seconds
+Optimal objective  5.483516484e+02
+Optimize a model with 2 rows, 4 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.1000000e+32   5.000000e+29   1.100000e+02      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  5.483516484e+02
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 19:47:36 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 19:48:43 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 19:52:18 2014
+
+Optimize a model with 2 rows, 4 columns and 8 nonzeros
+Presolve removed 2 rows and 4 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective -0.000000000e+00
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 19:57:34 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 4 columns
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible or unbounded model
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 20:36:51 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:02:21 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:07:07 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:07:31 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:08:29 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 2 rows, 4 columns and 8 nonzeros
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.1000000e+32   5.000000e+29   1.100000e+02      0s
+       2    5.4835165e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  5.483516484e+02
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:09:13 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:09:38 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:16:25 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 5 columns and 12 nonzeros
+Presolve removed 4 rows and 5 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:17:37 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 5 columns and 12 nonzeros
+Presolve removed 4 rows and 5 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:18:35 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 5 columns and 12 nonzeros
+Presolve removed 4 rows and 5 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:20:44 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:22:21 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:24:13 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:24:28 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:25:54 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:27:00 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:28:30 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:30:25 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:30:39 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:31:14 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:31:47 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:32:09 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:32:25 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:35:15 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:37:21 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:38:35 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:40:20 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:41:09 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:41:37 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:42:15 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:43:17 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:45:58 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:46:16 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:46:26 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:46:35 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:56:16 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:57:13 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:57:37 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Sun Dec  7 23:58:13 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 00:00:54 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 00:01:30 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 00:01:59 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 00:03:21 2014
+
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 12:38:49 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.01 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 12:40:56 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 15:37:45 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 15:44:24 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 15:44:37 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 16:10:09 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+
+Gurobi 5.6.3 (mac64) logging started Mon Dec  8 16:10:45 2014
+
+Optimize a model with 3 rows, 4 columns and 12 nonzeros
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 4 columns, 8 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.5000000e+01   2.000000e-01   0.000000e+00      0s
+       1    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01
+Optimize a model with 4 rows, 3 columns and 12 nonzeros
+Presolve removed 4 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.8333333e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  2.833333333e+01

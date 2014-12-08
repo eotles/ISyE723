@@ -28,8 +28,6 @@ def main():
     model.policyIteration()
     model.modifiedPolicyIteration(.01, 100)
     model.modifiedPolicyIteration(.1, 100)
-    model.linearProgramming_Primal(True)
-    model.linearProgramming_Dual(True)
 
 
 if __name__ == '__main__':
