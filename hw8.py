@@ -43,9 +43,9 @@ def main():
     l = 0.9
     
     denardo = mdp.model(N, S, A, r_t, r_N, p, l)
-    #denardo.arValueIteration(.01)
-    #denardo.arLinearProgramming_Primal(False)
-    #denardo.arLinearProgramming_Dual(False)
+    #denardo.arValueIteration(1)
+    denardo.arLinearProgramming_Primal(False)
+    denardo.arLinearProgramming_Dual(False)
 
 
 if __name__ == '__main__':
